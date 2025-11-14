@@ -12,14 +12,17 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-white shadow-md p-4 flex justify-between items-center">
+    <header className="w-full bg-white text-center py-4 shadow-sm">
+      {/* Title */}
       <h1
-        className="text-2xl font-bold text-blue-600 cursor-pointer"
+        className="text-4xl font-bold text-blue-600 mb-2 cursor-pointer"
         onClick={() => navigate('/')}
       >
         WutsAround
       </h1>
-      <nav className="flex space-x-4">
+
+      {/* Buttons under title */}
+      <nav className="flex justify-center space-x-3">
         <Button onClick={handleLogin}>Login</Button>
         <Button onClick={() => navigate('/travel')}>Travel</Button>
         <Button onClick={() => navigate('/restaurants')}>Restaurants</Button>
