@@ -12,7 +12,7 @@ export default function Header() {
   };
 
   return (
-    <header className="w-full bg-white text-center py-4 shadow-sm">
+    <header className="sticky top-0 z-50 w-full bg-white text-center py-4 shadow-sm">
       {/* Title */}
       <h1
         className="text-4xl font-bold text-blue-600 mb-2 cursor-pointer"

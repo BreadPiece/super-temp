@@ -4,16 +4,16 @@ import Footer from './Footer';
 
 export default function Layout({ children }) {
   return (
-    <div className="min-h-screen flex flex-col justify-between bg-white text-gray-900">
-      {/* Header at very top */}
+    <div className="flex flex-col min-h-screen bg-white text-gray-900">
+      {/* Header */}
       <Header />
 
-      {/* Main content fills space between header & footer */}
-      <main className="flex-1 flex flex-col items-center justify-start p-8">
+      {/* Main content expands to fill space */}
+      <main className="flex-1 w-full max-w-7xl mx-auto p-8 flex flex-col items-center justify-center">
         {children}
       </main>
 
-      {/* Footer at bottom */}
+      {/* Footer always at bottom */}
       <Footer />
     </div>
   );
